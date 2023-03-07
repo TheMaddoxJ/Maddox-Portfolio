@@ -17,7 +17,7 @@ body{
     position: relative;
     font-family: sans-serif;
 }
-
+    /*navigation bar syleing */
 .navbar {
     width: 86%;
     display: flex;
@@ -32,7 +32,7 @@ body{
     cursor:pointer;
     margin-left: 36%;
 }
-
+ /*unordered list styling*/
 ul {
     margin-top: -2%;
 }
@@ -51,7 +51,7 @@ ul li a {
     margin-top: -3%;
     transition: .4s ease;
 }
-
+/*hover styling*/
 ul li a:hover {
     color: #FFA500;
 }
@@ -87,7 +87,7 @@ color: black;
     display: inline-block;
     transition: .4s ease;
 }
-
+/*hire me hover*/
 .info a:hover {
     background: rgb(19, 147, 233);
 }
@@ -106,7 +106,7 @@ color: black;
     font-size: 18px;
     letter-spacing: 1px;
 }
-
+/*profile image*/
 .image {
     width: 30%;
     height: 70%;
@@ -151,7 +151,7 @@ color: black;
 
     .bg2 {
         margin-left: 0;
-        margin-top: 15%;
+        margin-top: 12%;
         box-shadow: inset;
     }
 
@@ -162,8 +162,42 @@ color: black;
     .footer {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+    /*style lines*/
+    .line {
+        position: relative;
+        width: 4px;
+        height: 704px;
+        background-color: #035b74;
+        color: #035b74;
+        right: -51%;
+        margin-top: -2%;
+    }
 
-    @media (max-width: 375px) {
+    .line2 {
+        position: relative;
+        width: 4px;
+        height: 704px;
+        background-color: #035b74;
+        color: #035b74;
+        right: -46%;
+        margin-top: -55.4%;
+        rotate: 90deg;
+    }
+    /*footer styling*/
+    #footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 7%;
+        width: 100%;
+        background-color: #035b74;
+        color: black;
+        text-align: center;
+      }
+
+
+      /*for mobile devices*/
+    @media screen and (max-width: 375px) {
         .image, img{
             display: none;
             visibility: hidden; 
@@ -180,4 +214,37 @@ color: black;
         .info a {
             display: none;
             }
+        
+        .line2 {
+            display: none;
+        }    
+
+        #footer {
+            height: 10%;
+        }
+
+        .prework a {
+            position: relative;
+            height: 400px;
+            width: 4px;
+            background-color: #035b74;
+            color: #035b74;
+            right: -51%;
+            margin-top: -2%;
+        }
+
+        .line {
+            display: none;
+        }
+
+        .mywork {
+            display: none;
+        }
+
+    }
+    /*to remove url*/
+    @media screen and (max-width: 1920px) {
+        .prework a{
+            display: none;
+        }
     }
